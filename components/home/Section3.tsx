@@ -1,10 +1,11 @@
 import React from 'react';
-import { Image, Spacer, Wrap } from '@chakra-ui/react';
+import { Spacer, Wrap } from '@chakra-ui/react';
 import Color from 'color';
 
 import PrimaryButton from '../shared/button/PrimaryButton';
 import Stack, { VStack } from '../shared/Stack';
 import { LargeHeading, Body1 } from '../shared/typography';
+import Image from '../shared/Image';
 
 const cards = [
   {

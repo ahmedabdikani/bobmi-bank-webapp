@@ -1,7 +1,8 @@
 import React from 'react';
-import { HStack, Image } from '@chakra-ui/react';
+import { HStack } from '@chakra-ui/react';
 
 import { Body2 } from './typography';
+import Image from './Image';
 
 interface LogoProps {}
 

@@ -1,6 +1,6 @@
-import { Image } from '@chakra-ui/react';
 import React from 'react';
 import PrimaryButton from '../shared/button/PrimaryButton';
+import Image from '../shared/Image';
 import Section from '../shared/Section';
 import Stack, { HStack, VStack } from '../shared/Stack';
 import { Body1, Heading, SubHeading } from '../shared/typography';

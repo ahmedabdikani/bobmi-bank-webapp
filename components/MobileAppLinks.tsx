@@ -1,5 +1,6 @@
 import React from 'react';
-import { HStack, Image, Link } from '@chakra-ui/react';
+import { HStack, Link } from '@chakra-ui/react';
+import Image from './shared/Image';
 
 interface MobileAppLinksProps {
   size?: 'md' | 'lg';

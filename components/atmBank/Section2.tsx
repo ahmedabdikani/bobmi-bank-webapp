@@ -1,10 +1,11 @@
 import React from 'react';
-import { Image, Wrap } from '@chakra-ui/react';
+import { Wrap } from '@chakra-ui/react';
 
 import Section from '../shared/Section';
 import { VStack } from '../shared/Stack';
 import { Body2, Caption, LargeHeading } from '../shared/typography';
 import Wrapper from '../shared/Wrapper';
+import Image from '../shared/Image';
 
 const points = [
   {

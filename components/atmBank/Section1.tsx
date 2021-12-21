@@ -1,5 +1,5 @@
-import { Image } from '@chakra-ui/react';
 import React from 'react';
+import Image from '../shared/Image';
 import Section from '../shared/Section';
 
 interface Section1Props {}

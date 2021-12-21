@@ -1,11 +1,12 @@
 import React from 'react';
-import { chakra, Image, useTheme, Wrap } from '@chakra-ui/react';
+import { chakra, useTheme, Wrap } from '@chakra-ui/react';
 
 import PrimaryButton from './shared/button/PrimaryButton';
 import { LargeHeading, Body1, Body2 } from './shared/typography';
 import Wrapper from './shared/Wrapper';
 import Stack, { HStack, VStack } from './shared/Stack';
 import Section from './shared/Section';
+import Image from './shared/Image';
 
 const useFullPoints = [
   {

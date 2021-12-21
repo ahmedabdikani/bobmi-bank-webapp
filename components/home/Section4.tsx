@@ -1,7 +1,8 @@
-import { Image, Spacer } from '@chakra-ui/react';
+import { Spacer } from '@chakra-ui/react';
 import React from 'react';
 
 import MobileAppLinks from '../MobileAppLinks';
+import Image from '../shared/Image';
 import Section from '../shared/Section';
 import Stack, { VStack } from '../shared/Stack';
 import { LargeHeading } from '../shared/typography';
