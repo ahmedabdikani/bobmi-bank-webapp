@@ -20,14 +20,12 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - run: yarn install
-        env:
-          NEXT_PUBLIC_BASE_PATH: /nextjs-pwa-chakra-ui
       - run: yarn build
         env:
-          NEXT_PUBLIC_BASE_PATH: /nextjs-pwa-chakra-ui
+          NEXT_PUBLIC_BASE_PATH: /bobmi-bank-webapp
       - run: npx next export
         env:
-          NEXT_PUBLIC_BASE_PATH: /nextjs-pwa-chakra-ui
+          NEXT_PUBLIC_BASE_PATH: /bobmi-bank-webapp
       - run: touch ./out/.nojekyll
 
       - name: Deploy 🚀
