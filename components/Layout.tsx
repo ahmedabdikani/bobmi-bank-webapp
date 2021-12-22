@@ -4,6 +4,7 @@ import { Box } from '@chakra-ui/react';
 
 import Footer from './shared/Footer';
 import Header from './shared/Header';
+import fixSrcWithBasePath from '../utils/fixSrcWithBasePath';
 
 interface LayoutProps {}
 
@@ -15,28 +16,36 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <link
           rel='apple-touch-icon'
           sizes='180x180'
-          href='/apple-touch-icon.png'
+          href={fixSrcWithBasePath('/apple-touch-icon.png')}
         />
         <link
           rel='icon'
           type='image/png'
           sizes='32x32'
-          href='/favicon-32x32.png'
+          href={fixSrcWithBasePath('/favicon-32x32.png')}
         />
         <link
           rel='icon'
           type='image/png'
           sizes='16x16'
-          href='/favicon-16x16.png'
+          href={fixSrcWithBasePath('/favicon-16x16.png')}
         />
-        <link rel='manifest' href='/site.webmanifest' />
-        <link rel='mask-icon' href='/safari-pinned-tab.svg' color='#51C6E4' />
+        <link rel='manifest' href={fixSrcWithBasePath('/site.webmanifest')} />
+        <link
+          rel='mask-icon'
+          href={fixSrcWithBasePath('/safari-pinned-tab.svg')}
+          color='#51C6E4'
+        />
         <meta name='msapplication-TileColor' content='#51C6E4' />
         <meta name='theme-color' content='#ffffff' />
       </Head>
-      <Header />
-      {children}
-      <Footer />
+      <header>
+        <Header />
+      </header>
+      <main>{children}</main>
+      <footer>
+        <Footer />
+      </footer>
     </Box>
   );
 };
