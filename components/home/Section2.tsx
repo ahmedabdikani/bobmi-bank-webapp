@@ -73,7 +73,7 @@ const Section2: React.FC<Section2Props> = ({}) => {
               pos={['relative', 'absolute']}
               top='35%'
               right='0'
-              src='images/atm.png'
+              src='/images/atm.png'
               alt='atm'
             />
           </Stack>
