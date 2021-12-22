@@ -8,8 +8,6 @@ const Image: React.FC<ImageProps> = (props) => {
     ? `${process?.env?.NEXT_PUBLIC_BASE_PATH}${src}`
     : src;
 
-  console.log(newSrc);
-
   return <DefaultImage src={newSrc} {...rest} />;
 };
 
