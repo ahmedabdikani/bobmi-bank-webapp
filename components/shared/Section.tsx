@@ -1,7 +1,7 @@
-import { BoxProps, VStack } from '@chakra-ui/react';
+import { StackProps, VStack } from '@chakra-ui/react';
 import React from 'react';
 
-const Section: React.FC<BoxProps> = (props) => {
+const Section: React.FC<StackProps> = (props) => {
   return (
     <VStack
       align='stretch'

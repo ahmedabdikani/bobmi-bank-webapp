@@ -23,7 +23,7 @@ const Header: React.FC<HeaderProps> = ({}) => {
 
   if (isMobile) {
     return (
-      <HStack p='4' justify='space-between'>
+      <HStack as='header' p='4' justify='space-between'>
         <Logo />
         <IconButton
           onClick={onOpen}

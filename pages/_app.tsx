@@ -1,7 +1,7 @@
+import React from 'react';
 import type { AppProps } from 'next/app';
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import { createBreakpoints } from '@chakra-ui/theme-tools';
-import Layout from '../components/Layout';
 
 import '../styles/globals.css';
 import '@fontsource/montserrat/100.css';
@@ -13,6 +13,9 @@ import '@fontsource/montserrat/600.css';
 import '@fontsource/montserrat/700.css';
 import '@fontsource/montserrat/800.css';
 import '@fontsource/montserrat/900.css';
+
+import Layout from '../components/Layout';
+import Drawer from '../components/Drawer';
 import { DrawerProvider } from '../context/DrawerContext';
 
 const colors = {
@@ -39,14 +42,17 @@ const theme = extendTheme({
   },
 });
 
-export default function MyApp({ Component, pageProps }: AppProps) {
+const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <ChakraProvider theme={theme}>
       <DrawerProvider>
         <Layout>
+          <Drawer />
           <Component {...pageProps} />
         </Layout>
       </DrawerProvider>
     </ChakraProvider>
   );
-}
+};
+
+export default MyApp;

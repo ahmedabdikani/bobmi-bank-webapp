@@ -4,7 +4,6 @@ import { Box } from '@chakra-ui/react';
 
 import Footer from './shared/Footer';
 import Header from './shared/Header';
-import Drawer from './Drawer';
 
 interface LayoutProps {}
 
@@ -35,10 +34,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <meta name='msapplication-TileColor' content='#51C6E4' />
         <meta name='theme-color' content='#ffffff' />
       </Head>
-
       <Header />
-      <Drawer />
-
       {children}
       <Footer />
     </Box>

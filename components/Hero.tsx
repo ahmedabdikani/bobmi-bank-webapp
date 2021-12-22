@@ -27,7 +27,7 @@ const useFullPoints = [
   },
 ];
 
-const Svg = chakra('svg');
+const Svg = chakra('svg', {});
 
 const Hero: React.FC = () => {
   const theme = useTheme();

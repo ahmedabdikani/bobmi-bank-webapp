@@ -1,10 +1,11 @@
 import React from 'react';
-import { Center, Image } from '@chakra-ui/react';
+import { Center } from '@chakra-ui/react';
 
 import { Body1, Body2, Caption, SubHeading } from './typography';
 import Wrapper from './Wrapper';
 import MobileAppLinks from '../MobileAppLinks';
 import Stack, { HStack, VStack } from './Stack';
+import Image from './Image';
 
 const privacyPolicy = [
   { title: 'Privacy', items: ['Community Policy', 'Safety', 'Report'] },
