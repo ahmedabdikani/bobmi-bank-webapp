@@ -3,7 +3,6 @@ import type { AppProps } from 'next/app';
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import { createBreakpoints } from '@chakra-ui/theme-tools';
 
-import '../styles/globals.css';
 import '@fontsource/montserrat/100.css';
 import '@fontsource/montserrat/200.css';
 import '@fontsource/montserrat/300.css';
@@ -13,6 +12,7 @@ import '@fontsource/montserrat/600.css';
 import '@fontsource/montserrat/700.css';
 import '@fontsource/montserrat/800.css';
 import '@fontsource/montserrat/900.css';
+import '../styles/globals.css';
 
 import Layout from '../components/Layout';
 import Drawer from '../components/Drawer';
