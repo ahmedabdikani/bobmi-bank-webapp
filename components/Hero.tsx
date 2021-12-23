@@ -1,5 +1,5 @@
 import React from 'react';
-import { chakra, useTheme, Wrap } from '@chakra-ui/react';
+import { chakra, useTheme, Wrap, WrapItem } from '@chakra-ui/react';
 
 import PrimaryButton from './shared/button/PrimaryButton';
 import { LargeHeading, Body1, Body2 } from './shared/typography';
@@ -67,17 +67,19 @@ const Hero: React.FC = () => {
         </Stack>
         <Wrap mt='8' justify='space-around' align='flex-start' spacing={4}>
           {useFullPoints.map(({ title, description, image }, index) => (
-            <HStack align='flex-start' key={index}>
-              <Image src={image} alt={title} h='36px' objectFit='contain' />
-              <VStack align='flex-start' spacing='2'>
-                <Body2 fontWeight='bold' size='xs'>
-                  {title}
-                </Body2>
-                <Body1 color='gray' maxW='290px'>
-                  {description}
-                </Body1>
-              </VStack>
-            </HStack>
+            <WrapItem key={index}>
+              <HStack align='flex-start'>
+                <Image src={image} alt={title} h='36px' objectFit='contain' />
+                <VStack align='flex-start' spacing='2'>
+                  <Body2 fontWeight='bold' size='xs'>
+                    {title}
+                  </Body2>
+                  <Body1 color='gray' maxW='290px'>
+                    {description}
+                  </Body1>
+                </VStack>
+              </HStack>
+            </WrapItem>
           ))}
         </Wrap>
       </Wrapper>

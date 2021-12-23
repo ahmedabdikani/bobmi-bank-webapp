@@ -64,7 +64,7 @@ const Header: React.FC<HeaderProps> = ({}) => {
             <Logo />
             <HStack spacing='4'>
               {pageLinks.map((link) => (
-                <Link key={link}>
+                <Link key={link} href='#'>
                   <Body1 fontWeight='medium'>{link}</Body1>
                 </Link>
               ))}

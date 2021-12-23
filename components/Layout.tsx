@@ -38,6 +38,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         />
         <meta name='msapplication-TileColor' content='#51C6E4' />
         <meta name='theme-color' content='#ffffff' />
+        <meta name='description' content='Bombi Bank' />
       </Head>
       <header>
         <Header />
