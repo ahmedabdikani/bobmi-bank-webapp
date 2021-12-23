@@ -1,5 +1,5 @@
 import React from 'react';
-import { Spacer, Wrap } from '@chakra-ui/react';
+import { Spacer, Wrap, WrapItem } from '@chakra-ui/react';
 import Color from 'color';
 
 import PrimaryButton from '../shared/button/PrimaryButton';
@@ -70,16 +70,17 @@ const Section3: React.FC<Section3Props> = ({}) => {
           </LargeHeading>
           <Wrap spacing='4' maxW='460px' justify='center'>
             {cards.map(({ name, image }) => (
-              <VStack
-                borderRadius='md'
-                placeItems='center'
-                bg='white'
-                key={name}
-                w='140px'
-                h='60px'
-              >
-                <Image src={image} m='auto' alt={name} />
-              </VStack>
+              <WrapItem key={name}>
+                <VStack
+                  borderRadius='md'
+                  placeItems='center'
+                  bg='white'
+                  w='140px'
+                  h='60px'
+                >
+                  <Image src={image} m='auto' alt={name} />
+                </VStack>
+              </WrapItem>
             ))}
           </Wrap>
           <Body1 color='gray' maxW='590px'>

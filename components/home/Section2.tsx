@@ -10,7 +10,7 @@ interface Section2Props {}
 
 const Section2: React.FC<Section2Props> = ({}) => {
   return (
-    <Section>
+    <Section my='12'>
       <Wrapper>
         <Stack justify='space-between' spacing='4'>
           <VStack
