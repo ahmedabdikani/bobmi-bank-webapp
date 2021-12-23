@@ -18,6 +18,7 @@ import '../styles/globals.css';
 
 import Layout from '../components/Layout';
 import { DrawerProvider } from '../context/DrawerContext';
+import Head from 'next/head';
 const Drawer = dynamic(() => import('../components/Drawer'), {
   ssr: false,
 });
@@ -51,6 +52,9 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
     <ChakraProvider theme={theme}>
       <DrawerProvider>
         <Layout>
+          <Head>
+            <title>Bombi Bank</title>
+          </Head>
           <Drawer />
           <Component {...pageProps} />
         </Layout>
