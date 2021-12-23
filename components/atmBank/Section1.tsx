@@ -7,7 +7,12 @@ interface Section1Props {}
 const Section1: React.FC<Section1Props> = ({}) => {
   return (
     <Section alignItems='center' my='12'>
-      <Image src='/images/atm-details.png' alt='atm details' />
+      <Image
+        height={591}
+        width={1106}
+        src='/images/atm-details.png'
+        alt='atm details'
+      />
     </Section>
   );
 };

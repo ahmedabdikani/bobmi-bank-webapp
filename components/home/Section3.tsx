@@ -63,6 +63,8 @@ const Section3: React.FC<Section3Props> = ({}) => {
           pos={['relative', 'relative', 'relative', 'absolute']}
           src='/images/bambi-cards.png'
           alt='bambi cards'
+          width={519}
+          height={444}
         />
         <VStack>
           <LargeHeading maxW='550px' textAlign={['center', 'left']}>
@@ -77,8 +79,15 @@ const Section3: React.FC<Section3Props> = ({}) => {
                   bg='white'
                   w='140px'
                   h='60px'
+                  pos='relative'
                 >
-                  <Image src={image} m='auto' alt={name} />
+                  <Image
+                    objectFit='scale-down'
+                    layout='fill'
+                    src={image}
+                    m='auto'
+                    alt={name}
+                  />
                 </VStack>
               </WrapItem>
             ))}

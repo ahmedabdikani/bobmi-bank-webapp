@@ -37,8 +37,8 @@ const Hero: React.FC = () => {
   return (
     <Section bgGradient='linear(to-b, #F4F6F9, transparent)'>
       <Wrapper py={['4', '12']}>
-        <Stack justify='space-between' spacing={8}>
-          <VStack>
+        <Stack justify='space-between'>
+          <VStack pb='8'>
             <VStack spacing='0'>
               <LargeHeading fontWeight='regular'>High Street</LargeHeading>
               <LargeHeading>Cryptocurrency</LargeHeading>
@@ -59,17 +59,19 @@ const Hero: React.FC = () => {
             </Body1>
             <PrimaryButton>Get started</PrimaryButton>
           </VStack>
-          <Image
-            w={['100%', '100%', '50%']}
-            src='/images/hero.png'
-            alt='hero'
-          />
+          <Image width={588} height={509} src='/images/hero.png' alt='hero' />
         </Stack>
         <Wrap mt='8' justify='space-around' align='flex-start' spacing={4}>
           {useFullPoints.map(({ title, description, image }, index) => (
             <WrapItem key={index}>
               <HStack align='flex-start'>
-                <Image src={image} alt={title} h='36px' objectFit='contain' />
+                <Image
+                  src={image}
+                  alt={title}
+                  height={36}
+                  width={36}
+                  objectFit='contain'
+                />
                 <VStack align='flex-start' spacing='2'>
                   <Body2 fontWeight='bold' size='xs'>
                     {title}

@@ -55,7 +55,13 @@ const Section2: React.FC<Section2Props> = ({}) => {
                 align='center'
                 justify='center'
               >
-                <Image src={point.icon} alt={point.title} />
+                <Image
+                  src={point.icon}
+                  alt={point.title}
+                  height={56}
+                  width={56}
+                  objectFit='scale-down'
+                />
                 <Body2 fontWeight='bold'>{point.title}</Body2>
               </VStack>
             ))}

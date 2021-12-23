@@ -43,6 +43,8 @@ const Section4: React.FC<Section4Props> = ({}) => {
             }}
             src='/images/phone-leaning-left.png'
             alt='phone leaning left'
+            width={428}
+            height={482}
           />
           <Spacer />
           <VStack align='flex-start' spacing={8}>
@@ -69,6 +71,8 @@ const Section4: React.FC<Section4Props> = ({}) => {
           translateY='30%'
           src='/images/folded-paper.png'
           alt='folded paper'
+          width={213}
+          height={149}
         />
       </Section>
     </Wrapper>

@@ -38,6 +38,8 @@ const Section3: React.FC<Section3Props> = ({}) => {
             objectFit='contain'
             src='/images/service-details.png'
             alt='ATM Bank'
+            width={345}
+            height={603}
           />
           <VStack flex={1} align='stretch' maxW='615px'>
             {points.map(({ description, title }, index) => (

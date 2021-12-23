@@ -55,6 +55,8 @@ const Section4: React.FC<Section4Props> = ({}) => {
               }}
               src='/images/home-screen.png'
               alt='phone'
+              width={337}
+              height={511}
             />
           </Stack>
         </VStack>

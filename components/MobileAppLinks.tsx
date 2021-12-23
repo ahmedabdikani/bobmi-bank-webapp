@@ -9,12 +9,13 @@ interface MobileAppLinksProps {
 
 const MobileAppLinks: React.FC<MobileAppLinksProps> = ({ size = 'md' }) => {
   const w = size === 'md' ? '122px' : '180px';
-  // const h = size === 'md' ? '42px' : '54px';
+  const h = size === 'md' ? '42px' : '54px';
   return (
     <HStack spacing='4'>
       <Link href='#'>
         <Image
-          w={w}
+          width={w}
+          height={h}
           objectFit='contain'
           src='/images/play-store.png'
           alt='google play'
@@ -23,7 +24,8 @@ const MobileAppLinks: React.FC<MobileAppLinksProps> = ({ size = 'md' }) => {
       <Link href='#'>
         <Image
           objectFit='contain'
-          w={w}
+          width={w}
+          height={h}
           src='/images/app-store.png'
           alt='app store'
         />

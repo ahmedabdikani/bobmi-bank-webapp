@@ -7,6 +7,7 @@ import Stack, { VStack } from '../shared/Stack';
 import { LargeHeading, Body2, Body1 } from '../shared/typography';
 import Wrapper from '../shared/Wrapper';
 
+const ICON_SIZE = 56;
 const points = [
   {
     title: 'Automation on Transactional',
@@ -29,6 +30,8 @@ const Section1: React.FC = () => (
         <Image
           src='/images/hand-holding-home-screen.png'
           alt='hand holding home screen'
+          width={365}
+          height={481}
         />
         <VStack textAlign={['center', 'center', 'left']} align='stretch'>
           <LargeHeading fontWeight='semibold'>The New Reality</LargeHeading>
@@ -42,7 +45,12 @@ const Section1: React.FC = () => (
                 p='4'
                 key={title}
               >
-                <Image src={image} alt={title} />
+                <Image
+                  src={image}
+                  alt={title}
+                  height={ICON_SIZE}
+                  width={ICON_SIZE}
+                />
                 <Body2 fontWeight='bold' maxW='154px'>
                   {title}
                 </Body2>

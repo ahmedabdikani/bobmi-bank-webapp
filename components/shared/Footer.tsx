@@ -34,7 +34,8 @@ const Footer: React.FC<FooterProps> = (props) => {
               <Image
                 src='/images/logo.png'
                 alt='logo'
-                h='48px'
+                height={48}
+                width={30}
                 objectFit='contain'
               />
               <SubHeading fontWeight='bold'>Bombi Bank</SubHeading>
@@ -60,7 +61,8 @@ const Footer: React.FC<FooterProps> = (props) => {
               <Body2 fontWeight='semibold'>Partner</Body2>
               <HStack spacing='2' py='2' px='4' bg='yellow' borderRadius='full'>
                 <Image
-                  h='20px'
+                  height={20}
+                  width={20}
                   src='/images/pupipay.png'
                   alt='pupipay app logo'
                 />
@@ -69,7 +71,12 @@ const Footer: React.FC<FooterProps> = (props) => {
                 </Caption>
               </HStack>
               <HStack spacing='2'>
-                <Image h='20px' src='/images/zupapp.png' alt='zup app logo' />
+                <Image
+                  height={20}
+                  width={20}
+                  src='/images/zupapp.png'
+                  alt='zup app logo'
+                />
                 <Caption fontWeight='bold'>Zup App</Caption>
               </HStack>
             </VStack>

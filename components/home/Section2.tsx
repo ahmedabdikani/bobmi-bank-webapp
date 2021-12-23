@@ -1,4 +1,5 @@
 import React from 'react';
+
 import PrimaryButton from '../shared/button/PrimaryButton';
 import Image from '../shared/Image';
 import Section from '../shared/Section';
@@ -43,14 +44,14 @@ const Section2: React.FC<Section2Props> = ({}) => {
               </VStack>
             </HStack>
             <PrimaryButton>Join Now</PrimaryButton>
-            <Image
+            {/* <Image
               display={['none', 'none']}
               src='/images/bombi-card-blue.png'
               alt='bombi card blue'
               position='absolute'
               right='-20px'
               transform='auto'
-            />
+            /> */}
           </VStack>
           <Stack
             w={['100%', '100%', '100%', '35%']}
@@ -75,6 +76,8 @@ const Section2: React.FC<Section2Props> = ({}) => {
               right='0'
               src='/images/atm.png'
               alt='atm'
+              width={223}
+              height={372}
             />
           </Stack>
         </Stack>
