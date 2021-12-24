@@ -70,7 +70,7 @@ const Hero: React.FC = () => {
                   alt={title}
                   height={36}
                   width={36}
-                  objectFit='contain'
+                  loading='eager'
                 />
                 <VStack align='flex-start' spacing='2'>
                   <Body2 fontWeight='bold' size='xs'>
