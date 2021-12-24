@@ -83,7 +83,6 @@ const Section3: React.FC<Section3Props> = ({}) => {
                 >
                   <Image
                     objectFit='scale-down'
-                    layout='fill'
                     src={image}
                     m='auto'
                     alt={name}
