@@ -8,7 +8,7 @@ import Stack, { HStack, VStack } from './shared/Stack';
 import Section from './shared/Section';
 import Image from './shared/Image';
 
-const useFullPoints = [
+const points = [
   {
     title: 'Guaranteed Safety',
     description:
@@ -62,7 +62,7 @@ const Hero: React.FC = () => {
           <Image width={588} height={509} src='/images/hero.png' alt='hero' />
         </Stack>
         <Wrap mt='8' justify='space-around' align='flex-start' spacing={4}>
-          {useFullPoints.map(({ title, description, image }, index) => (
+          {points.map(({ title, description, image }, index) => (
             <WrapItem key={index}>
               <HStack align='flex-start'>
                 <Image
