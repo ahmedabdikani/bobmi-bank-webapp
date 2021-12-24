@@ -5,12 +5,13 @@ interface Context {
   isOpen: boolean;
   onOpen: () => void;
   onClose: () => void;
+  onToggle: () => void;
 }
 
 export const DrawerContext = React.createContext<Context>({} as Context);
 
 export const DrawerProvider: React.FC = ({ children }) => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const { isOpen, onOpen, onClose, onToggle } = useDisclosure();
 
   return (
     <DrawerContext.Provider
@@ -18,6 +19,7 @@ export const DrawerProvider: React.FC = ({ children }) => {
         isOpen,
         onOpen,
         onClose,
+        onToggle,
       }}
     >
       {children}

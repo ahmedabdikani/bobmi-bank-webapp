@@ -1,8 +1,14 @@
 import React from 'react';
-import { Divider, HStack, IconButton, Link, VStack } from '@chakra-ui/react';
+import {
+  Button,
+  Divider,
+  HStack,
+  Link,
+  MenuButton,
+  VStack,
+} from '@chakra-ui/react';
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
-import { IoMenuOutline } from 'react-icons/io5';
 
 import PrimaryButton from './button/PrimaryButton';
 import Logo from './Logo';
@@ -11,6 +17,7 @@ import Wrapper from './Wrapper';
 import useScreenSize from '../../hook/useScreenSize';
 import { useDrawerContext } from '../../hook/useContext';
 import routes from '../../data/routes';
+import Image from './Image';
 
 interface HeaderProps {}
 
@@ -18,19 +25,16 @@ const pageLinks = ['Bank', 'About', 'Open Account', 'Card', 'Online'];
 
 const Header: React.FC<HeaderProps> = ({}) => {
   const router = useRouter();
-  const { onOpen } = useDrawerContext();
-  const isMobile = useScreenSize() < 768;
+  const { onToggle } = useDrawerContext();
+  const isMobile = useScreenSize().width < 768;
 
   if (isMobile) {
     return (
       <HStack p='4' justify='space-between'>
         <Logo />
-        <IconButton
-          onClick={onOpen}
-          aria-label='menu'
-          as={IoMenuOutline}
-          boxSize='30px'
-        />
+        <Button onClick={onToggle}>
+          <Image width={28} height={28} src='/images/menu.png' alt='menu' />
+        </Button>
       </HStack>
     );
   }
